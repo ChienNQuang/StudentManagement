@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DSCProject\\StudentManagement.API\\StudentManagement.API.csproj": {}
+    "C:\\Users\\quangchieens\\Documents\\StudentManagement\\StudentManagement.API\\StudentManagement.API.csproj": {}
   },
   "projects": {
-    "D:\\DSCProject\\StudentManagement.API\\StudentManagement.API.csproj": {
+    "C:\\Users\\quangchieens\\Documents\\StudentManagement\\StudentManagement.API\\StudentManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DSCProject\\StudentManagement.API\\StudentManagement.API.csproj",
+        "projectUniqueName": "C:\\Users\\quangchieens\\Documents\\StudentManagement\\StudentManagement.API\\StudentManagement.API.csproj",
         "projectName": "StudentManagement.API",
-        "projectPath": "D:\\DSCProject\\StudentManagement.API\\StudentManagement.API.csproj",
-        "packagesPath": "C:\\Users\\Chien\\.nuget\\packages\\",
-        "outputPath": "D:\\DSCProject\\StudentManagement.API\\obj\\",
+        "projectPath": "C:\\Users\\quangchieens\\Documents\\StudentManagement\\StudentManagement.API\\StudentManagement.API.csproj",
+        "packagesPath": "C:\\Users\\quangchieens\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quangchieens\\Documents\\StudentManagement\\StudentManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Chien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quangchieens\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -103,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     }
