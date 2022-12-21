@@ -1,5 +1,7 @@
 using AutoMapper;
 using StudentManagement.API.Helpers;
+using StudentManagement.API.Models.DTOs;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.Profiles
 {
@@ -7,7 +9,7 @@ namespace StudentManagement.API.Profiles
     {
         public StudentsProfile()
         {
-            CreateMap<Entities.Student, Models.StudentDto>()
+            CreateMap<Student, StudentDto>()
                 .ForMember(
                     dest => dest.Name,
                     opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}")
@@ -17,9 +19,9 @@ namespace StudentManagement.API.Profiles
                     opt => opt.MapFrom(src => src.DateOfBirth.GetCurrentAge())
                 );
 
-            CreateMap<Models.StudentForCreationDto, Entities.Student>();
-            CreateMap<Models.StudentForUpdateDto, Entities.Student>();
-            CreateMap<Entities.Student, Entities.User>();
+            CreateMap<StudentForCreationDto, Student>();
+            CreateMap<StudentForUpdateDto, Student>();
+            CreateMap<Student, User>();
         }
     }
 }

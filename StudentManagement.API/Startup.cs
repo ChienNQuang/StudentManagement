@@ -21,6 +21,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using System.IO;
 using Microsoft.AspNetCore.Http;
+using StudentManagement.API.Repositories;
 
 namespace StudentManagement.API
 {
@@ -51,8 +52,7 @@ namespace StudentManagement.API
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddDbContextPool<StudentManagementDbContext>(options => {
-                options.UseSqlServer(
-                    @"Server=(localdb)\mssqllocaldb;Database=StudentManagementDb;Integrated Security=True");
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString"));
             });
 
             services.Configure<ApiBehaviorOptions>(options =>

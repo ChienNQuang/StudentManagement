@@ -1,11 +1,12 @@
 using AutoMapper;
-using StudentManagement.API.Entities;
 using StudentManagement.API.Models;
 using StudentManagement.API.Services;
 using StudentManagement.API.TokenAuthentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StudentManagement.API.Controllers.Payloads.Requests;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.Controllers
 {

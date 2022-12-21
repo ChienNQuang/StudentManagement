@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using StudentManagement.API.Entities;
 using StudentManagement.API.Helpers;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.Repositories
 {

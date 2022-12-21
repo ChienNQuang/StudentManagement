@@ -3,12 +3,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using StudentManagement.API.Entities;
 using StudentManagement.API.Helpers;
 using StudentManagement.API.Models;
 using StudentManagement.API.Services;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.TokenAuthentication
 {
@@ -48,40 +48,5 @@ namespace StudentManagement.API.TokenAuthentication
 
             return user.WithoutPassword();
         }
-
-        // public string NewToken()
-        // {
-        //     var tokenDescriptor = new SecurityTokenDescriptor()
-        //     {
-        //         Subject = new ClaimsIdentity( new Claim[] { new Claim(ClaimTypes.Name, "Chien")}),
-        //         Expires = DateTime.UtcNow.AddMinutes(2),
-        //         SigningCredentials = new SigningCredentials(
-        //             new SymmetricSecurityKey(secretKey),
-        //             SecurityAlgorithms.HmacSha256Signature)
-        //     };
-
-        //     SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
-        //     string stringToken = tokenHandler.WriteToken(token);
-
-        //     return stringToken;
-        // }
-
-        // public ClaimsPrincipal VerifyToken(string token)
-        // {
-        //     var validationParameters = new TokenValidationParameters()
-        //     {
-        //         ValidateIssuerSigningKey = true,
-        //         IssuerSigningKey = new SymmetricSecurityKey(secretKey),
-        //         ValidateLifetime = true,
-        //         ValidateAudience = false,
-        //         ValidateIssuer = false,
-        //         ClockSkew = TimeSpan.Zero
-        //     };
-        //     var claims = tokenHandler.ValidateToken(token, 
-        //                 validationParameters, 
-        //                 out SecurityToken validatedToken);
-
-        //     return claims;
-        // }
     }
 }

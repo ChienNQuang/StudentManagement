@@ -33,5 +33,18 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="app\build\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="app\build\appsettings.json" />
+    <_ContentIncludedByDefault Remove="app\build\Properties\launchSettings.json" />
+    <_ContentIncludedByDefault Remove="app\build\StudentManagement.API.deps.json" />
+    <_ContentIncludedByDefault Remove="app\build\StudentManagement.API.runtimeconfig.dev.json" />
+    <_ContentIncludedByDefault Remove="app\build\StudentManagement.API.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities" />
+  </ItemGroup>
+
 
 </Project>

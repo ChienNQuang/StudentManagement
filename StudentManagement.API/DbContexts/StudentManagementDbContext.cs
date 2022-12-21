@@ -1,6 +1,6 @@
-using StudentManagement.API.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.DbContexts
 {

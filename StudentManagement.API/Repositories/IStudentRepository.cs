@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using StudentManagement.API.Entities;
+using StudentManagement.API.Models.Entities;
 
 namespace StudentManagement.API.Repositories
 {

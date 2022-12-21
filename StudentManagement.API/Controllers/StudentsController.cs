@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
 using AutoMapper;
-using StudentManagement.API.Entities;
 using StudentManagement.API.Models;
 using StudentManagement.API.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StudentManagement.API.Models.DTOs;
+using StudentManagement.API.Models.Entities;
+using StudentManagement.API.Repositories;
 
 namespace StudentManagement.API.Controllers
 {

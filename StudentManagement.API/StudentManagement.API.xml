@@ -4,7 +4,7 @@
         <name>StudentManagement.API</name>
     </assembly>
     <members>
-        <member name="M:StudentManagement.API.Controllers.AuthenticateController.Authenticate(StudentManagement.API.Models.AuthenticateRequestModel)">
+        <member name="M:StudentManagement.API.Controllers.AuthenticateController.Authenticate(StudentManagement.API.Controllers.Payloads.Requests.AuthenticateRequestModel)">
             <summary>
             Log user in and return a token
             </summary>
@@ -24,14 +24,14 @@
             <param name="studentId">The id of the student you want to get</param>
             <returns>An ActionResult of type StudentDto</returns>
         </member>
-        <member name="M:StudentManagement.API.Controllers.StudentsController.CreateStudent(StudentManagement.API.Models.StudentForCreationDto)">
+        <member name="M:StudentManagement.API.Controllers.StudentsController.CreateStudent(StudentManagement.API.Models.DTOs.StudentForCreationDto)">
             <summary>
             Create a student
             </summary>
             <param name="student">The student to be created</param>
             <returns>An ActionResult of type StudentDto</returns>
         </member>
-        <member name="M:StudentManagement.API.Controllers.StudentsController.UpdateStudent(System.Guid,StudentManagement.API.Models.StudentForUpdateDto)">
+        <member name="M:StudentManagement.API.Controllers.StudentsController.UpdateStudent(System.Guid,StudentManagement.API.Models.DTOs.StudentForUpdateDto)">
             <summary>
             Update a specific student
             </summary>
